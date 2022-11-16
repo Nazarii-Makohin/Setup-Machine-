@@ -36,7 +36,8 @@ source ~/.rvm/scripts/rvm
 ## Install Node.js
 ```shell
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-``` # [Node.js]
+```
+[Node.js]
 ```shell
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 ```
@@ -50,7 +51,8 @@ asdf global nodejs 12.16.3
 ## Install yarn and set to latest version
 ```shell
 npm install -g yarn
-``` # [yarn]
+```
+[yarn]
 
 ```shell
 yarn set version latest
@@ -90,7 +92,8 @@ git config --global user.email ‘your_email@example.com’
 ## Instal zsh
 ```shell
 brew install zsh
-``` # [zsh]  
+```
+[zsh]  
 
 ## Install oh-my-zsh
 ```shell
@@ -124,7 +127,8 @@ Install starship from # [starship]
 ## Install iTerm2
 ```shell
 brew install iterm2 --cask
-``` # [iterm2]
+```
+[iterm2]
 
 ## Fonts for iterm2(fix[?])
 ### I use Inconsolata for PowerShell
@@ -226,7 +230,8 @@ Install manually with the link:
 ### VSCode
 ```shell
 brew install visual-studio-code --cask
-``` # [vs code]
+```
+[vs code]
 
 **Shortcut For VSCode**  
 Open the VSCode app and type in `command + shift P`, then type in `shell command` and click the search result. This will add a shortcut so that you can use `code` to open files and directories from your terminal in VSCode. For example, to open the directory you're currently in:
@@ -238,7 +243,8 @@ code .
 ## XCode
 ```shell
 xcode-select --install
-```  # [xcode]
+```
+[xcode]
 ```shell
 sudo xcodebuild -license
 ```
