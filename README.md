@@ -126,7 +126,8 @@ Select and install font  from [nerdfonts]. # I use Inconsolata Nerd Font
 Install starship from [starship].
 
 
-## Install iTerm2 #### Not a neccessary if you have Warp
+## Install iTerm2 
+#### #Not a neccessary if you have Warp
 ```shell
 brew install iterm2 --cask
 ```
