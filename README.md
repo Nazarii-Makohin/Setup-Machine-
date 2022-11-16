@@ -10,83 +10,106 @@
 
 ## Install asdf
 ```shell
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1```
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
+```
 ```shell
-echo -e '\nautoload -U +X compinit && compinit' >> ~/.zshrc```
+echo -e '\nautoload -U +X compinit && compinit' >> ~/.zshrc
+```
 ```shell
-echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.zshrc```
+echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.zshrc
+```
 ```shell
-echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.zshrc```
+echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.zshrc
+```
 ```shell
-source ~/.zshrc```
+source ~/.zshrc
+```
 
 ## Install rvm
 ```shell
-curl -sSL https://get.rvm.io | bash -s stable```
+curl -sSL https://get.rvm.io | bash -s stable
+```
 ```shell
-source ~/.rvm/scripts/rvm```
+source ~/.rvm/scripts/rvm
+```
 
 ## Install Node.js
 ```shell
-asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git``` # [Node.js]
+asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+``` # [Node.js]
 ```shell
-bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring```
+bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
+```
 ```shell
-asdf install nodejs 12.16.3```
+asdf install nodejs 12.16.3
+```
 ```shell
-asdf global nodejs 12.16.3```
+asdf global nodejs 12.16.3
+```
 
 ## Install yarn and set to latest version
 ```shell
-npm install -g yarn``` # [yarn]
+npm install -g yarn
+``` # [yarn]
 
 ```shell
-yarn set version latest```
+yarn set version latest
+```
 
 # Part 2: Connection to git
 
 ## Install git
 ```shell
-brew install git```
+brew install git
+```
 
 ## Github
 For getting set up with github, You may need to do the following:
 - Generate a new key:  
   ```shell
-  ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```
+  ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+  ```
 
 - Copy the new rsa key:  
   ```shell
-  pbcopy < ~/.ssh/id_rsa.pub```
+  pbcopy < ~/.ssh/id_rsa.pub
+  ```
 
 - Add this key to your GitHub account
 
 Additionally, you can configure your github user:  
 ```shell
-git config --global user.name ‘username’```  
+git config --global user.name ‘username’
+```  
 ```shell
-git config --global user.email ‘your_email@example.com’```
+git config --global user.email ‘your_email@example.com’
+```
 
 # Part 3: Configuration of zsh
 
 ## Instal zsh
 ```shell
-brew install zsh``` # [zsh]  
+brew install zsh
+``` # [zsh]  
 
 ## Install oh-my-zsh
 ```shell
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"```
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 ### Plugins for zsh that need additional installing
 ```shell
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions```
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+```
 ```shell
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+```
 
 ## Set zsh as your default shell
 If you don’t get prompted to do this when installing oh-my-zsh, try this:   
 ```shell
-chsh -s /usr/local/bin/zsh```
+chsh -s /usr/local/bin/zsh
+```
 
 Additional reading for zsh config, covers themes, colors, fonts, etc:  
 https://www.freecodecamp.org/news/how-to-configure-your-macos-terminal-with-zsh-like-a-pro-c0ab3f3c1156/
@@ -100,20 +123,26 @@ Install starship from # [starship]
 ### Not a neccessary if you have Warp
 ## Install iTerm2
 ```shell
-brew install iterm2 --cask``` # [iterm2]
+brew install iterm2 --cask
+``` # [iterm2]
 
 ## Fonts for iterm2(fix[?])
 ### I use Inconsolata for PowerShell
 ```shell
-create folder```
+create folder
+```
 ```shell
-cd folder```
+cd folder
+```
 ```shell
-git clone https://github.com/powerline/fonts.git```
+git clone https://github.com/powerline/fonts.git
+```
 ```shell
-cd fonts```
+cd fonts
+```
 ```shell
-./install.sh```
+./install.sh
+```
 
 Iterm2 color schemes:   
 https://github.com/mbadolato/iTerm2-Color-Schemes
@@ -123,52 +152,69 @@ https://github.com/mbadolato/iTerm2-Color-Schemes
 ## Installing Ruby
 Ruby is probably already installed on your Macbook. You can check to confirm with:  
 ```shell
-ruby -v```
+ruby -v
+```
 
 To install:
 via asdf:
 ```shell
-asdf plugin-add ruby```
+asdf plugin-add ruby
+```
 ```shell
-asdf install ruby 2.3.6```
+asdf install ruby 2.3.6
+```
 ```shell
-asdf global ruby 2.3.6```
+asdf global ruby 2.3.6
+```
 OR via rvm:
 ```shell
-rvm install 2.3.6 --with-openssl-dir=/usr/local/Cellar/openssl@1.0/1.0.2t/```
+rvm install 2.3.6 --with-openssl-dir=/usr/local/Cellar/openssl@1.0/1.0.2t/
+```
 ```shell
-rvm --default use 2.3.6```
+rvm --default use 2.3.6
+```
 ```shell
-rvm use ruby-2.3.6```
+rvm use ruby-2.3.6
+```
 OR via homebrew:
 ```shell
-brew install ruby```
+brew install ruby
+```
 
 ## Installing Python
 Python is probably already installed on your Macbook. You can check to confirm with:  
 ```shell
-python -v```
+python -v
+```
 
 To install:
 ```shell
-asdf plugin-add python```
+asdf plugin-add python
+```
 ```shell
-asdf install python 2.3.6```
+asdf install python 2.3.6
+```
 ```shell
-asdf global python 2.3.6```
+asdf global python 2.3.6
+```
 OR
 ```shell
-brew install python``` 
+brew install python
+``` 
 
 ## Installing JAVA SDK
 ```shell
-asdf plugin-add java```
+asdf plugin-add java
+```
 ```shell
-asdf list-all java``` # list of all of the versions available to install on asdf
+asdf list-all java
+``` # list of all of the versions available to install on asdf
 ```shell
-asdf install java adoptopenjdk-8.0.302+8```
+asdf install java adoptopenjdk-8.0.302+8
+```
 ```shell
-asdf global java adoptopenjdk-8.0.302+8```
+asdf global java adoptopenjdk-8.0.302+8
+```
 
 ## Install PDFtk
 Install manually with the link:
@@ -179,58 +225,72 @@ Install manually with the link:
 ## Install a Code Editor
 ### VSCode
 ```shell
-brew install visual-studio-code --cask``` # [vs code]
+brew install visual-studio-code --cask
+``` # [vs code]
 
 **Shortcut For VSCode**  
 Open the VSCode app and type in `command + shift P`, then type in `shell command` and click the search result. This will add a shortcut so that you can use `code` to open files and directories from your terminal in VSCode. For example, to open the directory you're currently in:
 
 ```shell
-code .```
+code .
+```
 
 ## XCode
 ```shell
-xcode-select --install```  # [xcode]
+xcode-select --install
+```  # [xcode]
 ```shell
-sudo xcodebuild -license```
+sudo xcodebuild -license
+```
 
 ### If you get the error "xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '
 /Library/Developer/CommandLineTools' is a command line tools instance", run
 ```shell
-sudo xcode-select -s /Applications/Xcode.app/Contents/Developer```
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+```
 ```shell
-sudo xcodebuild -license```
+sudo xcodebuild -license
+```
 
 ## Rubymine
 ```shell
-brew install rubymine```
+brew install rubymine
+```
 
 ## Postgres
 To install:
 ```shell
-brew install postgres``` 
+brew install postgres
+``` 
 
 To start:
 ```shell
-brew services start postgresql```  
+brew services start postgresql
+```  
 
 ## MySQL
 To install:
 ```shell
-brew install mysql``` 
+brew install mysql
+``` 
 
 To start:
 ```shell
-brew services start mysql``` 
+brew services start mysql
+``` 
 
 ## Rails
 ```shell
-sudo gem install rails```
+sudo gem install rails
+```
 
 ## Bundler
 ```shell
-gem update --system```
+gem update --system
+```
 ```shell
-gem install bundler```
+gem install bundler
+```
 
 ## VIM
 - [VIM links]
