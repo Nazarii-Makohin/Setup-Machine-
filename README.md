@@ -119,9 +119,10 @@ https://www.freecodecamp.org/news/how-to-configure-your-macos-terminal-with-zsh-
 
 # Part 4: Configuration of Terminal
 ## Install Warp
-Install manually from # [warp]
-Select and install font (I use Inconsolata Nerd Font) # [nerdfonts]
-Install starship from # [starship]
+Install manually from [warp].
+
+Select and install font  from [nerdfonts]. # I use Inconsolata Nerd Font
+Install starship from [starship]
 
 ### Not a neccessary if you have Warp
 ## Install iTerm2
