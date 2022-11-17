@@ -305,7 +305,7 @@ gem install bundler
 
 ## Apps to use 
 - Google Chrome
-- Amphetamine
+- Amphetamine [link]
 - Microsoft Outlook
 - Microsoft Teams
 - Discord
@@ -326,6 +326,7 @@ gem install bundler
  [pdftk]: <https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg>
  [vs code]: <https://code.visualstudio.com/>
  [xcode]: <https://itunes.apple.com/us/app/xcode/id497799835?mt=12>
+ [link]: <https://apps.apple.com/us/app/amphetamine/id937984704?mt=12>
 
 ## Useful Links
 - Homebrew: https://brew.sh/
